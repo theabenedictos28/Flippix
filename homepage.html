@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flippix</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      border-bottom: 2px solid #4a6cff;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      margin-left: 25px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #4a6cff;
+    }
+
+    /* Main content */
+    main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 40px;
+      background: #4a6cff;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 2px solid #4a6cff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer img {
+      height: 28px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <img src="images/labers.png" alt="Flippix Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">How to Use</a>
+      <a href="#">About</a>
+      <a href="login.php">Login</a>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <h1>Flippix</h1>
+    <h2>Flashcards</h2>
+    <p>
+      Take control of your learning journey by creating personalized flashcards that work perfectly 
+      for your unique study needs. When you make your own flashcards, you're not just preparing 
+      study materials you're actively engaging with the content, which significantly boosts 
+      retention and understanding.
+    </p>
+    <div class="buttons">
+      <button class="btn">LogIn ⟶</button>
+      <button class="btn">How to Use ⟶</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <img src="images/labers.png" alt="Flippix Logo">
+    <p>Flippix ©2025</p>
+  </footer>
+
+</body>
+</html>
